@@ -2,7 +2,7 @@
 $color-main: hsl(46.1, 97.1%, 59.8%); 
 $color-dark: hsl(0, 0%, 13.3%);
 $color-light: hsl(0, 0%, 100%);
-$color-error: hsl(288, 100%, 50%); //color set if it is bed set
+$color-error: hsl(288, 100%, 50%); //color is set if it is use wrong name
 
 ///Color mixins
 @mixin color($color) {
