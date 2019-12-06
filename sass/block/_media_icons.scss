@@ -1,0 +1,22 @@
+.media-icons {
+    display: inline-block;
+}
+
+.media-icons__item {
+    font-size: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    @include bg-color('main');
+    border-radius: 50%;
+    position: relative;
+}
+
+.media-icons__icon {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include color('light');
+    transform: translate(-50%, -50%);
+}

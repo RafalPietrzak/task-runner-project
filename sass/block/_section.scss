@@ -1,0 +1,50 @@
+///BLOCK section
+.section {
+    padding: 0;
+   // text-align: center;
+}
+
+.section--fixed {
+    position: fixed;
+    width: 100%;
+}
+
+///MIX for block positionig
+.section__block--vertical-center {
+    margin: auto auto;
+}
+
+
+///ELEMENT container
+.section__container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 20px;
+}
+
+///ELEMENT row
+.section__row {
+    color: none;
+}
+
+.section__row--flex-sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+///ELEMENT title
+.section__title {
+    @include color('dark');
+    @include font(3, '', uppercase);
+    margin: 72px 0 10px;
+    text-align: center;
+}
+
+.section__sub-title {
+    margin: 0;
+    margin-bottom: 36px;
+    text-align: center;
+    @include font(1,'s');
+}
+

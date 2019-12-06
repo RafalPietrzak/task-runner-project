@@ -1,0 +1,15 @@
+///BLOCK navigation
+.navigation {
+    display: inline-block;
+}
+
+.navigation__item {
+    display: inline-block;
+    padding: 3px;
+}
+
+.navigation__link {
+    @include color(main);
+    @include font(1.2, '', uppercase);
+    text-decoration: none;
+}

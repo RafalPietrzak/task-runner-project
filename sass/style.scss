@@ -1,8 +1,19 @@
+@charset 'utf-8';
+
+///@include variables, mixin and function grouped by issues
 @import 'abstract/_color.scss';
 @import 'abstract/_font.scss';
+@import 'abstract/_media.scss';
 
+///@include base reset css
 @import 'base/_reset.scss';
 
+///@include BEM BLOCK
+@import 'block/_box.scss';
+@import 'block/_brand.scss';
+@import 'block/_button.scss';
+@import 'block/_copyrights.scss';
+@import 'block/_media_icons.scss';
+@import 'block/_navigation.scss';
 @import 'block/_section.scss';
-
-
+@import 'block/_splash.scss';

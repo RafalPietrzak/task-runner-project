@@ -1,0 +1,14 @@
+$font-serif: 'Signika', sans-serif;
+$font-sans: 'Inconsolata', monospace;
+
+@mixin font ($size: 1, $font: 0, $tex-transform: 0){
+     @if ($font == 's') {
+        $font: $font-serif;
+    } @else {
+       $font: $font-sans;
+    }
+    font-family: $font;
+    font-size: $size * 1rem;
+    text-transform: if($tex-transform, $tex-transform, unset);
+}
+

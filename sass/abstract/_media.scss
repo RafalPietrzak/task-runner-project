@@ -1,0 +1,22 @@
+///brake point
+$brake-max1: 900px;
+$brake-max2: 700px;
+$brake-max3: 500px;
+
+
+@mixin media ($brake: 1){
+    @if ($brake == 1) {
+        @media (max-width: $brake-max1) and (min-width: ($brake-max2 - 1)){
+            @content;
+        }
+    } @else if($brake == 2) {
+        @media (max-width: $brake-max2) and (min-width: ($brake-max3 - 1)){
+            @content;
+        }
+    }
+    @else if($brake == 3) {
+        @media (max-width: $brake-max3) {
+            @content;
+        }
+    }
+}

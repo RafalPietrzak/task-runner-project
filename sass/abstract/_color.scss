@@ -1,6 +1,40 @@
-//Font
+///Color variables
+$color-main: hsl(46.1, 97.1%, 59.8%); 
+$color-dark: hsl(0, 0%, 13.3%);
+$color-light: hsl(0, 0%, 100%);
+$color-error: hsl(288, 100%, 50%); //color set if it is bed set
 
+///Color mixins
+@mixin color($color) {
+    @if ($color == 'main') {
+        $color: $color-main;  
+    } @else if ($color == 'dark') {
+        $color: $color-dark;
+    } @else if ($color == 'light') {
+        $color: $color-light;
+    } @else {
+        $color: $color-error;
+    }
+    color: $color;
+    &:hover {
+        color: darken($color, 20);
+    }
 
-//Color
-$color_main: hsl(10, 10%, 10%);
+}
 
+@mixin bg-color($color) {
+    @if ($color == 'main') {
+        $color: $color-main;  
+    } @else if ($color == 'dark') {
+        $color: $color-dark;
+    } @else if ($color == 'light') {
+        $color: $color-light;
+    } @else {
+        $color: $color-error;
+    }
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, 20);
+    }
+
+}

@@ -1,0 +1,17 @@
+.button {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    @include font(1.2, 0, uppercase);
+}
+
+.button--color-main {
+    @include bg-color('main');
+    @include color('light');
+}

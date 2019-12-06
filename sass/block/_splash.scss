@@ -1,0 +1,72 @@
+///BLOCK splash
+.splash {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.splash__inner {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.splash__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+.splash__bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.splash__page-title {
+    text-align: center;
+    @include color('light');
+    @include font(5, '', uppercase);
+}
+
+.splash__page-title--small {
+    display: inline-block;
+    margin-bottom: 40px;
+    @include font(3, 's', uppercase);
+}
+
+.splash__block--h-center {
+    margin: auto;
+}
+
+@include media(1){
+    .splash__page-title{
+        @include font(4);
+    } 
+    .splash__page-title--small{
+        @include font(2);
+    }
+}
+
+@include media(2){
+    .splash__page-title{
+        @include font(2);
+    }
+    
+    .splash__page-title--small{
+        @include font(1.5);
+        margin-bottom: 20px;
+    }
+}
+
+@include media(3){
+    .splash__page-title{
+        @include font(1.5);
+        margin-bottom: 10px;
+    }
+
+    .splash__page-title--small{
+        @include font(1.2);
+    }
+}
